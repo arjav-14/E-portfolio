@@ -1,0 +1,250 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+
+/* BODY BACKGROUND */
+
+body{
+background:linear-gradient(135deg,#eef2ff,#e0f2fe,#fdf4ff);
+background-size:300% 300%;
+animation:gradientMove 10s ease infinite alternate;
+color:#1e293b;
+}
+
+@keyframes gradientMove{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+
+/* NAVBAR */
+
+header{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0px 5px 20px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+header h1{
+font-size:28px;
+font-weight:700;
+background:linear-gradient(90deg,#2563eb,#9333ea);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+color:#334155;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+background:linear-gradient(90deg,#2563eb,#9333ea);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:18px;
+color:#64748b;
+margin-bottom:30px;
+}
+
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:12px 28px;
+border-radius:8px;
+background:linear-gradient(90deg,#2563eb,#9333ea);
+color:white;
+font-weight:600;
+text-decoration:none;
+transition:0.3s ease;
+box-shadow:0px 8px 25px rgba(99,102,241,0.25);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0px 15px 35px rgba(147,51,234,0.4);
+}
+
+
+/* SECTION */
+
+section{
+padding:70px 10%;
+}
+
+section h2{
+text-align:center;
+font-size:34px;
+margin-bottom:50px;
+background:linear-gradient(90deg,#2563eb,#9333ea);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+
+/* PROJECT CARDS */
+
+.card{
+max-width:900px;
+margin:25px auto;
+background:white;
+padding:30px;
+border-radius:18px;
+transition:0.35s ease;
+box-shadow:0px 10px 30px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0px 25px 50px rgba(37,99,235,0.15);
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:12px;
+color:#2563eb;
+}
+
+.card p{
+font-size:16px;
+line-height:1.7;
+color:#475569;
+}
+
+
+/* SKILLS */
+
+ul{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+li{
+list-style:none;
+padding:10px 22px;
+background:#eef2ff;
+border-radius:8px;
+transition:0.3s;
+font-weight:500;
+}
+
+li:hover{
+background:#2563eb;
+color:white;
+transform:scale(1.08);
+}
+
+
+/* CONTACT */
+
+#contact{
+text-align:center;
+}
+
+#contact a{
+color:#2563eb;
+text-decoration:none;
+font-weight:500;
+}
+
+#contact a:hover{
+text-decoration:underline;
+}
+
+
+/* EXPERIENCE */
+
+.duration{
+color:#9333ea;
+font-weight:600;
+margin-bottom:8px;
+}
+
+#experience ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+#experience li{
+margin-bottom:6px;
+color:#475569;
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+background:white;
+color:#64748b;
+margin-top:40px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:32px;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+.card{
+padding:20px;
+}
+
+}
