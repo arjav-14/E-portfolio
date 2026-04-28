@@ -1,250 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arjav Badjate | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjav Badjate | Full Stack Developer | AI/ML Enthusiast</title>
+    <meta name="description" content="B.Tech Computer Engineering student specializing in full-stack development, AI/ML systems, and scalable backend applications.">
+    <meta property="og:title" content="Arjav Badjate | Full Stack Developer">
+    <meta property="og:description" content="Computer Engineering student passionate about building AI-powered full-stack applications">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arjavbadjate.github.io">
+    <meta name="keywords" content="Full Stack Developer, AI/ML, MERN Stack, React, Node.js, Python, Django">
+    <meta name="author" content="Arjav Badjate">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 font-inter">
 
-<header>
-    <h1>Arjav Badjate</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full bg-white shadow-md z-50 transition-all duration-300">
+    <nav class="container mx-auto px-4 sm:px-6 py-3">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+                Arjav Badjate
+            </h1>
+            <ul class="hidden lg:flex space-x-6 xl:space-x-8 flex-shrink-0">
+                <li><a href="#home" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    About
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    Projects
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    Experience
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    Skills
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 relative group py-2">
+                    Contact
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-600 hover:text-blue-600 transition-colors p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+            <ul class="space-y-2">
+                <li><a href="#home" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">Home</a></li>
+                <li><a href="#about" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">About</a></li>
+                <li><a href="#projects" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">Projects</a></li>
+                <li><a href="#experience" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">Experience</a></li>
+                <li><a href="#skills" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">Skills</a></li>
+                <li><a href="#contact" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-all duration-300">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
-
-<section class="hero">
-    <h2>Software Developer | MERN Stack | AI Projects</h2>
-    <p>3rd Year Computer Engineering Student (MIT Pune)</p>
-
-    <a href="Arjav_Sanjay_Badjate_Resume.pdf" download class="btn">Download Resume</a>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+    <div class="container mx-auto text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Arjav Badjate
+                </span>
+            </h2>
+            <div class="text-2xl md:text-3xl font-semibold text-slate-700 mb-4">
+                Full Stack Developer | AI/ML Enthusiast
+            </div>
+            <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+                B.Tech Computer Engineering student passionate about building intelligent, scalable applications 
+                with modern web technologies and AI integration.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                    View Projects
+                </a>
+                <a href="Arjav_Sanjay_Badjate_Resume.pdf" download class="px-8 py-3 bg-white text-blue-600 border-2 border-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300">
+                    Download Resume
+                </a>
+                <a href="#contact" class="px-8 py-3 bg-slate-800 text-white font-semibold rounded-lg hover:bg-slate-700 transition-all duration-300">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-<section id="about">
-<h2>About Me</h2>
-
-<p>
-Passionate Computer Engineering student skilled in MERN stack,
-REST APIs, scalable backend development, and AI-powered systems.
-Solved 400+ LeetCode problems and built production-ready full-stack projects.
-</p>
-
+<!-- About Section -->
+<section id="about" class="py-20 px-6">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                About Me
+            </span>
+        </h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    I am a <strong>B.Tech Computer Engineering student</strong> at MIT Pune with a strong passion for 
+                    <strong>full-stack development</strong> and <strong>AI/ML systems</strong>. My journey in software development 
+                    has been driven by curiosity and a desire to build intelligent, scalable applications that solve real-world problems.
+                </p>
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    With expertise in the <strong>MERN stack</strong>, <strong>REST APIs</strong>, and <strong>backend architecture</strong>, 
+                    I have successfully delivered multiple production-ready projects. My experience spans from building 
+                    AI-powered platforms to creating robust e-commerce solutions with proper authentication and database design.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">400+</div>
+                        <div class="text-slate-600">LeetCode Problems Solved</div>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">10+</div>
+                        <div class="text-slate-600">Projects Completed</div>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="text-3xl font-bold text-green-600 mb-2">2+</div>
+                        <div class="text-slate-600">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-6 bg-slate-50">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Featured Projects
+            </span>
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            AI
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">Genovo-ADS</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        Full-stack AI platform that converts static images into viral videos using React, Node.js, PostgreSQL, and Gemini API with authentication and cloud deployment.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">React</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Gemini API</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">PostgreSQL</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://genovo-ads.vercel.app" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14/Genovo-ADS.git" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<!-- <section id="projects">
-<h2>Projects</h2>
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            ME
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">Pickle Selling Website</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        Backend-driven e-commerce platform with Express.js routing, cookie-based sessions, and MVC architecture for maintainability and scalability.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">MongoDB</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Express.js</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">React</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium">Node.js</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://trupti-mauve.vercel.app" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14/trupti.git" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<div class="card">
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            AI
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">DeepSeek Clone</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        AI-powered chat interface clone built using Next.js, Gemini API integration, and Clerk authentication system with real-time responses.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Next.js</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Gemini API</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Clerk Auth</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium">Tailwind</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://deepseek-theta-ochre.vercel.app" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14/deepseek.git" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<h3>Genovo-ADS (AI Video Generation Platform)</h3>
-<p>
-Transforms static images into viral AI-generated videos using Gemini API,
-React, Node.js, PostgreSQL. Includes authentication & cloud storage.
-</p>
+            <!-- Project Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            UI
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">LinkedIn Clone</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        Responsive LinkedIn-style social networking interface built using React.js and Tailwind CSS with reusable component-based architecture.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">React.js</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Components</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Responsive</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://proconnectversion1.vercel.app" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14/proconnectversion1.git" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <!-- Project Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            AI
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">RAG PDF System</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        Retrieval-Augmented Generation (RAG) pipeline for querying PDF documents with context-aware answers using transformer-based embeddings.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Transformers</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Embeddings</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">RAG</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://ragchat-9pvcrkdgnmpyfnx2udqebu.streamlit.app/" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14/ragchat.git" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-
-<div class="card">
-
-<h3>YouTube Video Summarizer</h3>
-<p>
-Deep learning pipeline using Whisper + BART transformers to summarize videos
-with or without captions.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Pickle Selling Website (MERN)</h3>
-<p>
-Built cookie-based sessions backend with MVC architecture using Express.js.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>RAG PDF Query System</h3>
-<p>
-Context-aware document Q&A using Retrieval-Augmented Generation architecture.
-</p>
-
-</div> -->
-
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-
-<div class="card">
-
-<h3>Genovo-ADS — AI Video Generation Platform</h3>
-
-<p>
-Full-stack AI platform that converts static images into viral videos using
-React, Node.js, PostgreSQL, and Gemini API with authentication and cloud deployment.
-</p>
-
-<a href="https://genovo-ads.vercel.app" target="_blank" class="btn">
-View Live Project
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Pickle Selling Website (MERN Stack)</h3>
-
-<p>
-Backend-driven product website with Express.js routing, cookie-based sessions,
-and MVC architecture for maintainability.
-</p>
-
-<a href="https://trupti-mauve.vercel.app" target="_blank" class="btn">
-View Live Project
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>DeepSeek Clone</h3>
-
-<p>
-AI-powered interface clone built using Next.js, Gemini API integration,
-and Clerk authentication system.
-</p>
-
-<a href="https://deepseek-theta-ochre.vercel.app" target="_blank" class="btn">
-View Live Project
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>LinkedIn Clone UI</h3>
-
-<p>
-Responsive LinkedIn-style social networking interface built using React.js
-and Tailwind CSS with reusable component-based architecture.
-</p>
-
-<a href="https://proconnectversion1.vercel.app" target="_blank" class="btn">
-View Live Project
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h3>RAG PDF Question Answering System</h3>
-
-<p>
-Built a Retrieval-Augmented Generation (RAG) pipeline that allows users to
-query PDF documents and receive context-aware answers using transformer-based
-embeddings and semantic search.
-</p>
-
-<p class="status">Status: Not Deployed</p>
-
-<a href="https://github.com/arjavbadjate" target="_blank" class="btn">
-View Source Code
-</a>
-
-</div>
-
+            <!-- Project Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            🎵
+                        </div>
+                        <h3 class="ml-3 text-xl font-bold text-slate-800">Audio Transcription Dashboard</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 line-clamp-3">
+                        Full-stack Next.js application for audio transcription with AI-powered capabilities, secure authentication, and modern glass morphism UI design.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Next.js 14</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Gemini API</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Prisma</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">JWT Auth</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://internshiptask-production-c7ef.up.railway.app" target="_blank" class="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center rounded-lg hover:shadow-md transition-all duration-300">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/arjav-14" target="_blank" class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-all duration-300">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-</section>
-<section id="experience">
-
-<h2>Experience</h2>
-
-<div class="card">
-
-<h3>Django Developer Intern — Startup</h3>
-
-<p>
-Worked on backend development using Django, designed REST APIs,
-implemented authentication systems, and developed scalable database
-models for web applications. Collaborated with team members to build
-production-ready backend features.
-</p>
-
-</div>
-
-</section>
-
-<section id="skills">
-<h2>Skills</h2>
-
-<ul>
-<li>C++</li>
-<li>JavaScript</li>
-<li>TypeScript</li>
-<li>React.js</li>
-<li>Node.js</li>
-<li>Next.js</li>
-<li>Django</li>
-<li>MongoDB</li>
-<li>MySQL</li>
-<li>REST APIs</li>
-<li>Git & GitHub</li>
-</ul>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: arjavbadjate1709@gmail.com</p>
-
-<p>
-LinkedIn:
-<a href="https://linkedin.com/in/arjavbadjate" target="_blank">
-linkedin.com/in/arjavbadjate
-</a>
-</p>
-
-<p>
-GitHub:
-<a href="https://github.com/arjavbadjate" target="_blank">
-github.com/arjavbadjate
-</a>
-</p>
-
+<!-- Experience Section -->
+<section id="experience" class="py-20 px-6">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Experience
+            </span>
+        </h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border-l-4 border-blue-500">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">Django Developer Intern</h3>
+                        <div class="text-lg text-blue-600 font-semibold mb-2">Startup Company</div>
+                        <div class="text-slate-500 font-medium">Backend Development | API Design</div>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-right">
+                        <div class="text-sm text-slate-500">Duration</div>
+                        <div class="text-lg font-semibold text-purple-600">3 Months</div>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-slate-700">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">▸</span>
+                        <span>Developed scalable backend systems using Django framework with proper MVC architecture</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">▸</span>
+                        <span>Designed and implemented RESTful APIs for web and mobile applications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">▸</span>
+                        <span>Built secure authentication systems with JWT tokens and session management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">▸</span>
+                        <span>Collaborated with cross-functional teams to deliver production-ready features</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- Certifications Section -->
+<section id="certifications" class="py-20 px-6 bg-slate-50">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Certifications & Achievements
+            </span>
+        </h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">400+ LeetCode Problems Solved</h3>
+                        </div>
+                    </div>
+                </div>
 
-<footer>
-<p>© 2026 Arjav Badjate</p>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Full Stack Development</h3>
+                            <p class="text-slate-600 text-sm mb-2">MERN Stack & Modern Web Technologies</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">MongoDB</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">Express.js</span>
+                                <span class="px-2 py-1 bg-cyan-100 text-cyan-700 rounded text-xs font-medium">React.js</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">AI/ML Projects</h3>
+                            <p class="text-slate-600 text-sm mb-2">Machine Learning & AI Integration</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">Gemini API</span>
+                                
+                                <span class="px-2 py-1 bg-pink-100 text-pink-700 rounded text-xs font-medium">RAG</span>
+                                <span class="px-2 py-1 bg-orange-100 text-orange-700 rounded text-xs font-medium">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Fast Learner</h3>
+                            <p class="text-slate-600 text-sm mb-2">Quick adaptation to new technologies</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">Self-taught</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Documentation</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 px-6 bg-slate-50">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Technical Skills
+            </span>
+        </h2>
+        <div class="max-w-6xl mx-auto">
+            <!-- Frontend Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Frontend Development</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">HTML5</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">CSS3</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">JavaScript</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">TypeScript</span>
+                    <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-lg font-medium hover:bg-cyan-200 transition-colors">React.js</span>
+                    <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors">Next.js</span>
+                    <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-lg font-medium hover:bg-cyan-200 transition-colors">Tailwind CSS</span>
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-medium hover:bg-purple-200 transition-colors">Redux</span>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Backend Development</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200 transition-colors">Node.js</span>
+                    <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200 transition-colors">Express.js</span>
+                    
+                    <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200 transition-colors">Python</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">REST APIs</span>
+                    <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-medium hover:bg-orange-200 transition-colors">JWT Auth</span>
+                </div>
+            </div>
+
+            <!-- Database Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Databases</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg font-medium hover:bg-yellow-200 transition-colors">MongoDB</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">MySQL</span>
+                    <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-medium hover:bg-orange-200 transition-colors">PostgreSQL</span>
+                    <span class="px-4 py-2 bg-red-100 text-red-700 rounded-lg font-medium hover:bg-red-200 transition-colors">Redis</span>
+                </div>
+            </div>
+
+            <!-- AI/ML Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">AI/ML & Tools</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-medium hover:bg-purple-200 transition-colors">Gemini API</span>
+                    
+                    <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-lg font-medium hover:bg-pink-200 transition-colors">RAG</span>
+                    <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors">Git & GitHub</span>
+                    <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-medium hover:bg-orange-200 transition-colors">VS Code</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">Docker</span>
+                    <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-lg font-medium hover:bg-cyan-200 transition-colors">Vercel</span>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div>
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Programming Languages</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">C++</span>
+                    <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg font-medium hover:bg-yellow-200 transition-colors">JavaScript</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition-colors">TypeScript</span>
+                    <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200 transition-colors">Python</span>
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-medium hover:bg-purple-200 transition-colors">SQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Get In Touch
+            </span>
+        </h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <p class="text-lg text-slate-700 text-center mb-8">
+                    I'm always interested in hearing about new opportunities and exciting projects. 
+                    Feel free to reach out if you'd like to collaborate or just have a chat!
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <a href="mailto:arjavbadjate1709@gmail.com" class="group">
+                        <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="font-semibold text-slate-800 mb-1">Email</div>
+                            <div class="text-slate-600 text-sm">arjavbadjate1709@gmail.com</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/arjavbadjate" target="_blank" class="group">
+                        <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div class="font-semibold text-slate-800 mb-1">LinkedIn</div>
+                            <div class="text-slate-600 text-sm">linkedin.com/in/arjavbadjate</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/arjavbadjate" target="_blank" class="group">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="font-semibold text-slate-800 mb-1">GitHub</div>
+                            <div class="text-slate-600 text-sm">github.com/arjavbadjate</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="text-center">
+                    <a href="Arjav_Sanjay_Badjate_Resume.pdf" download class="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-8 px-6">
+    <div class="container mx-auto text-center">
+        <p class="mb-4"> 2026 Arjav Badjate. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://linkedin.com/in/arjavbadjate" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                LinkedIn
+            </a>
+            <a href="https://github.com/arjavbadjate" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                GitHub
+            </a>
+            <a href="mailto:arjavbadjate1709@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+                Email
+            </a>
+        </div>
+    </div>
 </footer>
-
 
 <script src="script.js"></script>
 
